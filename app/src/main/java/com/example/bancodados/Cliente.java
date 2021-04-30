@@ -7,7 +7,7 @@ respectivos métodos "get" e "set", dois métodos construtores, sendo um com par
 nome e o CPF e outro com parâmetros referentes a todos os atributos da classe, além da
 sobrescrita do método "toString".
  */
-public class Csaliente {
+public class Cliente {
 
     private long id;
     private String nome;
