@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void salvarCliente(View view) {
-        cliente cliente = new cliente(nome.getText().toString(), cpf.getText().toString());
+        Cliente cliente = new Cliente(nome.getText().toString(), cpf.getText().toString());
         base.salvarCliente(cliente);
         nome.setText("");
         cpf.setText("");

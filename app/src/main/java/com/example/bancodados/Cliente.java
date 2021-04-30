@@ -7,20 +7,20 @@ respectivos métodos "get" e "set", dois métodos construtores, sendo um com par
 nome e o CPF e outro com parâmetros referentes a todos os atributos da classe, além da
 sobrescrita do método "toString".
  */
-public class cliente {
+public class Csaliente {
 
     private long id;
     private String nome;
     private String cpf;
 
     // Construtor
-    public cliente(long id, String nome, String cpf) {
+    public Cliente(long id, String nome, String cpf) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
     }
 
-    public cliente(String nome, String cpf) {
+    public Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }

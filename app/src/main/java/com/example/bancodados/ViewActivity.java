@@ -20,7 +20,7 @@ public class ViewActivity extends AppCompatActivity {
 
         ListView lista = (ListView) findViewById(R.id.lsLista);
         ClienteDbHelper base = new ClienteDbHelper(getApplicationContext());
-        ArrayAdapter<cliente> arrayAD = new ArrayAdapter<cliente>(
+        ArrayAdapter<Cliente> arrayAD = new ArrayAdapter<Cliente>(
                 getApplicationContext(),
                 android.R.layout.simple_list_item_1,
                 base.consultarClientes());

@@ -43,7 +43,7 @@ public class ClienteDbHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean salvarCliente(cliente cliente) {
+    public boolean salvarCliente(Cliente cliente) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(ClienteContract.ClienteDb.COLUMN_NOME, cliente.getNome());
@@ -59,7 +59,7 @@ public class ClienteDbHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("select * from " + ClienteContract.ClienteDb.TABLE_NAME, null);
         while (cursor.moveToNext()) {
             lista.add(
-                    new cliente(
+                    new Cliente(
                         cursor.getLong(cursor.getColumnIndex(ClienteContract.ClienteDb._ID)),
                         cursor.getString(cursor.getColumnIndex(ClienteContract.ClienteDb.COLUMN_NOME)),
                         cursor.getString(cursor.getColumnIndex(ClienteContract.ClienteDb.COLUMN_CPF))
