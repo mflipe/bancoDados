@@ -12,6 +12,7 @@ Além disso, caso a aplicação seja removida do sistema, todos os dados vincula
 A aplicação de exemplo que apresentada utiliza duas Activitys:
 - 1 - Cadastrar o ```Nome``` e ```CPF``` de cliente;
 - 2 - Visualizar os dados de todos os clientes que já foram cadastrados (Consulta ao banco).
+
 Dessa maneira, além da ```MainActivity``` (para cadastrar os dados de um cliente) teremos também a ```ViewActivity``` (para exibir os dados dos clientes).
 
 Para usar de maneira organizada o banco de dados no ```Android```, serão criadas as ```classes```:
